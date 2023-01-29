@@ -10,7 +10,7 @@ export async function loginFunction(page) {
 
 
 export async function signUpFunction(page, firstname, lastname, username, password) {
-    await page.pause(100000);
+    await page.pause(10000);
     await page.locator('[data-test="signup"]').click();
     await page.getByLabel('First Name').fill(firstname);
     await page.getByLabel('Last Name').fill(lastname);
